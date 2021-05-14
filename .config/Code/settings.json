@@ -1,43 +1,163 @@
 {
-  "workbench.startupEditor": "newUntitledFile",
-  "workbench.colorTheme": "Dracula Pro",
+  // Startup
+  "workbench.startupEditor": "none",
+  "workbench.editor.untitled.hint": "hidden",
+
+  // Layout
+  "workbench.sideBar.location": "left",
+  "workbench.panel.defaultLocation": "right",
+  "workbench.activityBar.visible": true,
+
+  // Appearance
+  "workbench.colorTheme": "Gruvbox Material Dark",
   "workbench.iconTheme": "material-icon-theme",
-  "editor.fontSize": 18,
-  "editor.fontFamily": "Jetbrains Mono",
+  
+  // Window
+  "window.zoomLevel": 1,
+
+  // General font adjustments
+  "editor.letterSpacing": 0,
   "editor.fontLigatures": true,
-  "editor.lineHeight": 24,
-  "editor.rulers": [
-    80,
-    120
-  ],
-  "editor.renderLineHighlight": "gutter",
-  "workbench.editor.labelFormat": "short",
-  "extensions.ignoreRecommendations": true,
-  "editor.tabSize": 2,
+  "editor.fontFamily": "Dank Mono",
+  "editor.fontSize": 16,
+  "terminal.integrated.fontFamily": "JetBrains Mono",
   "terminal.integrated.fontSize": 14,
+
+  // Files
+  "files.associations": {
+    ".sequelizerc": "javascript",
+    ".stylelintrc": "json",
+    ".prettierrc": "json",
+    ".babelrc": "json"
+  },
+  // "files.exclude": {
+  //   "**/.git": true,
+  //   "**/.svn": true,
+  //   "**/.hg": true,
+  //   "**/CVS": true,
+  //   "**/.DS_Store": true,
+  //   "node_modules": true
+  // },
+
+  // Good settings for recording tutorials
+  "editor.quickSuggestions": false,
+  "editor.mouseWheelZoom": true,
+  "editor.renderLineHighlight": "gutter",
+  "breadcrumbs.enabled": true,
+  "explorer.compactFolders": false,
+  "window.titleBarStyle": "custom", // "native" on Mac, "custom" on Windows
+  "window.menuBarVisibility": "toggle",
+
+  // General render settings
+  "editor.rulers": [80, 120],
+  "editor.minimap.enabled": false,
+  // Render all unwanted spaces
+  "editor.renderWhitespace": "all",
+
+  // Editor behavior
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": true,
+  "editor.selectionClipboard": false, // Only for Linux
+
+  // Actions on save
+  // "editor.formatOnSave": false,
+  // "editor.codeActionsOnSave": { "source.fixAll.eslint": true },
+  
+  // Auto imports
+  "javascript.suggest.autoImports": true,
+  "typescript.suggest.autoImports": true,
+
+  // Auto update import on move
+  "javascript.updateImportsOnFileMove.enabled": "never",
+  "typescript.updateImportsOnFileMove.enabled": "never",
+  
+  // Suggestions
+  "editor.suggestSelection": "first",
+
+  // Explorer Behavior
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  // "explorer.autoReveal": false,
+
+  // Large file optimizations
+  "editor.largeFileOptimizations": false,
+
+  // ESLint configuration
+  "eslint.packageManager": "yarn",
+  "eslint.codeActionsOnSave.mode": "all",
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+
+  // Prettier (based on Standard styleguide)
+  // "prettier.semi": false,
+  // "prettier.singleQuote": true,
+  // "prettier.trailingComma": "none",
+  // "prettier.arrowParens": "avoid",
+  // "prettier.endOfLine": "lf",
+
+  // Emmet
   "emmet.syntaxProfiles": {
-    "javascript": "jsx"
+    "javascript": "jsx" // Defines auto closing tags in JSX
   },
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
   },
-  "javascript.updateImportsOnFileMove.enabled": "never",
-  "typescript.updateImportsOnFileMove.enabled": "never",
-  "breadcrumbs.enabled": true,
-  "editor.parameterHints.enabled": false,
-  "explorer.confirmDragAndDrop": false,
-  "explorer.confirmDelete": false,
-  "liveServer.settings.donotShowInfoMsg": true,
-  "liveServer.settings.donotVerifyTags": true,
-  "explorer.compactFolders": false,
+
+  // Git integration settings
+  "git.enableSmartCommit": true,
+  "git.autofetch": true,
+  "git.confirmSync": false,
+
+  // Recommendation settings
+  "extensions.ignoreRecommendations": false, // Do not ignore recommendations
+
+  // Colorize Extension settings
+  // "colorize.languages": ["javascript", "typescript", "json", "html", "css"],
+
+  // Peacock Extension settings (customizable)
+  // "peacock.favoriteColors": [
+  //   {
+  //     "name": "Rocketseat Purple",
+  //     "value": "#7159C1"
+  //   },
+  //   {
+  //     "name": "Dracula Dark",
+  //     "value": "#0B0A10"
+  //   }
+  // ],
+
+  // Prettier Extension
+  // "[javascript]": {
+  //   "editor.defaultFormatter": "esbenp.prettier-vscode"
+  // },
+  // "[javascriptreact]": {
+  //   "editor.defaultFormatter": "esbenp.prettier-vscode"
+  // },
+  // "[typescript]": {
+  //   "editor.defaultFormatter": "esbenp.prettier-vscode"
+  // },
+  // "[typescriptreact]": {
+  //   "editor.defaultFormatter": "esbenp.prettier-vscode"
+  // },
+  // "[json]": {
+  //   "editor.defaultFormatter": "esbenp.prettier-vscode"
+  // },
+  // "[jsonc]": {
+  //   "editor.defaultFormatter": "esbenp.prettier-vscode"
+  // },
+  // "[html]": {
+  //   "editor.defaultFormatter": "esbenp.prettier-vscode"
+  // },
+
+  // Tabnine Extension
   "tabnine.experimentalAutoImports": true,
-  "editor.largeFileOptimizations": false,
-  "window.menuBarVisibility": "default",
-  "editor.minimap.enabled": false,
-  "javascript.suggest.autoImports": true,
-  "typescript.suggest.autoImports": true,
-  "files.eol": "\n",
-  "editor.insertSpaces": true,
+
+  // GitLens Extension settings
   "gitlens.codeLens.enabled": false,
   "gitlens.statusBar.enabled": false,
 }
